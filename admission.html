@@ -9,18 +9,64 @@
 <body class="bg-gray-100 text-gray-900">
 
 <!-- Header -->
+<!-- Header -->
 <header class="bg-white shadow-md sticky top-0 z-50">
   <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
     <h1 class="text-xl font-bold">ТЭЮТ</h1>
-    <nav class="hidden md:flex space-x-6 text-lg">
-      <a href="index.html" class="hover:text-blue-600">Главная</a>
-      <a href="about.html" class="hover:text-blue-600">О техникуме</a>
-      <a href="specialties.html" class="hover:text-blue-600">Специальности</a>
-      <a href="news.html" class="hover:text-blue-600">Новости</a>
-      <a href="admission.html" class="text-blue-600 font-semibold">Поступление</a>
+    <!-- Основное меню для десктопа -->
+    <nav class="hidden md:flex flex-wrap gap-6 text-lg">
+      <a href="about.html" class="hover:text-blue-600">О ТЭЮТ</a>
+      <a href="education.html" class="hover:text-blue-600">Образование</a>
+      <a href="news.html" class="hover:text-blue-600">НОВОСТИ</a>
       <a href="contacts.html" class="hover:text-blue-600">Контакты</a>
+      <a href="vosibupk.html" class="hover:text-blue-600">ВО СИБУПК</a>
+      <a href="courses.html" class="hover:text-blue-600">Курсы</a>
+      <a href="fsb.html" class="hover:text-blue-600">Класс ФСБ</a>
+      <a href="mvd.html" class="hover:text-blue-600">Класс МВД</a>
+      <a href="for-teacher.html" class="hover:text-blue-600">Преподавателю</a>
+      <a href="career-center.html" class="hover:text-blue-600">ЦЕНТР КАРЬЕРЫ</a>
+      <a href="safety-corner.html" class="hover:text-blue-600">Уголок безопасности</a>
+      <a href="admission.html" class="hover:text-blue-600">Приемная комиссия</a>
+      <a href="professionals.html" class="hover:text-blue-600">Движение Профессионалы</a>
+      <a href="risk-prevention.html" class="hover:text-blue-600">ПРОФИЛАКТИКА РИСКОВ</a>
+      <a href="for-applicant.html" class="hover:text-blue-600">Абитуриенту</a>
+      <a href="for-student.html" class="hover:text-blue-600">Студенту</a>
+      <a href="reviews.html" class="hover:text-blue-600">Отзывы</a>
     </nav>
+
+    <!-- Кнопка мобильного меню -->
+    <button class="md:hidden p-2 rounded bg-gray-200" onclick="toggleMenu()">☰</button>
   </div>
+
+  <!-- Мобильное меню -->
+  <div class="md:hidden hidden bg-white shadow-md flex flex-col" id="mobile-menu">
+    <a href="about.html" class="block px-4 py-2 hover:bg-gray-100">О ТЭЮТ</a>
+    <a href="education.html" class="block px-4 py-2 hover:bg-gray-100">Образование</a>
+    <a href="news.html" class="block px-4 py-2 hover:bg-gray-100">НОВОСТИ</a>
+    <a href="contacts.html" class="block px-4 py-2 hover:bg-gray-100">Контакты</a>
+    <a href="vosibupk.html" class="block px-4 py-2 hover:bg-gray-100">ВО СИБУПК</a>
+    <a href="courses.html" class="block px-4 py-2 hover:bg-gray-100">Курсы</a>
+    <a href="fsb.html" class="block px-4 py-2 hover:bg-gray-100">Класс ФСБ</a>
+    <a href="mvd.html" class="block px-4 py-2 hover:bg-gray-100">Класс МВД</a>
+    <a href="for-teacher.html" class="block px-4 py-2 hover:bg-gray-100">Преподавателю</a>
+    <a href="career-center.html" class="block px-4 py-2 hover:bg-gray-100">ЦЕНТР КАРЬЕРЫ</a>
+    <a href="safety-corner.html" class="block px-4 py-2 hover:bg-gray-100">Уголок безопасности</a>
+    <a href="admission.html" class="block px-4 py-2 hover:bg-gray-100">Приемная комиссия</a>
+    <a href="professionals.html" class="block px-4 py-2 hover:bg-gray-100">Движение Профессионалы</a>
+    <a href="risk-prevention.html" class="block px-4 py-2 hover:bg-gray-100">ПРОФИЛАКТИКА РИСКОВ</a>
+    <a href="for-applicant.html" class="block px-4 py-2 hover:bg-gray-100">Абитуриенту</a>
+    <a href="for-student.html" class="block px-4 py-2 hover:bg-gray-100">Студенту</a>
+    <a href="reviews.html" class="block px-4 py-2 hover:bg-gray-100">Отзывы</a>
+  </div>
+</header>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('mobile-menu');
+  menu.classList.toggle('hidden');
+}
+</script>
+
 </header>
 
 <!-- Hero -->
