@@ -101,18 +101,26 @@ html { scroll-behavior: smooth; }
 </section>
 
 <!-- Модальное окно -->
-<div id="orgModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+<div id="orgModal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50 overflow-auto">
   <div class="bg-white rounded-xl max-w-3xl w-full p-6 relative">
     <button onclick="toggleModal()" class="absolute top-4 right-4 text-gray-700 font-bold text-xl">×</button>
     <h2 class="text-3xl font-bold mb-4">Сведения об образовательной организации</h2>
-    <p class="text-gray-700 mb-4">Томский экономико-Юридический техникум (ТЭЮТ) — современное образовательное учреждение, осуществляющее подготовку специалистов среднего профессионального образования.</p>
-    <ul class="list-disc list-inside text-gray-700 space-y-1">
-      <li>Учредитель: Администрация Томской области</li>
-      <li>Адрес: г. Томск, ул. Примерная, д.1</li>
-      <li>Телефон: +7 (3822) 123-456</li>
-      <li>Email: info@teyt.tomsk.ru</li>
+    <ul class="list-disc list-inside text-gray-700 space-y-2 text-lg">
+      <li><a href="#" class="text-blue-600 hover:underline">Основные сведения</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Структура и органы управления образовательной организации</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Документы</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Образование</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Руководство</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Педагогический состав</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Материально-техническое обеспечение и оснащенность образовательного процесса. Доступная среда</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Платные образовательные услуги</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Финансово-хозяйственная деятельность</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Вакантные места для приема (перевода) обучающихся</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Стипендии и меры поддержки обучающихся</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Международное сотрудничество</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Организация питания в образовательной организации</a></li>
+      <li><a href="#" class="text-blue-600 hover:underline">Образовательные стандарты</a></li>
     </ul>
-    <p class="mt-4">Документы: <a href="#" class="text-blue-600">Устав</a>, <a href="#" class="text-blue-600">Лицензия</a>, <a href="#" class="text-blue-600">Аккредитация</a></p>
   </div>
 </div>
 
