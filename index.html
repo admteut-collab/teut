@@ -1,88 +1,171 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ТЭЮТ — Главная</title>
-<script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-100 text-gray-900">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ТЭЮТ — Главная</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- Header -->
-<header class="bg-white shadow-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
-    <h1 class="text-xl font-bold">ТЭЮТ</h-1>
-    <nav class="hidden md:flex space-x-6 text-lg">
-      <a href="index.html" class="text-blue-600 font-semibold">Главная</a>
-      <a href="about.html" class="hover:text-blue-600">О техникуме</a>
-      <a href="specialties.html" class="hover:text-blue-600">Специальности</a>
-      <a href="news.html" class="hover:text-blue-600">Новости</a>
-      <a href="admission.html" class="hover:text-blue-600">Поступление</a>
-      <a href="contacts.html" class="hover:text-blue-600">Контакты</a>
-    </nav>
-  </div>
+    <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100">
+
+<!-- HEADER -->
+<header class="bg-[#1f9d00] text-white shadow-md fixed w-full z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+        <a href="#" class="text-2xl font-bold">ТЭЮТ</a>
+
+        <!-- Desktop menu -->
+        <nav class="hidden md:flex space-x-6 font-medium">
+
+            <!-- О ТЭЮТ -->
+            <div class="relative dropdown">
+                <button class="hover:text-[#ffc51c]">О ТЭЮТ</button>
+                <div class="dropdown-menu hidden absolute left-0 mt-2 bg-white text-black rounded shadow-lg w-64">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Официальные документы</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Структура</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Вакансии</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Сотрудничество</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Студенческая жизнь</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Направления</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Дистанционное обучение</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Центр доп. образования</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Уголок безопасности</a>
+                </div>
+            </div>
+
+            <!-- Образование -->
+            <div class="relative dropdown">
+                <button class="hover:text-[#ffc51c]">Образование</button>
+                <div class="dropdown-menu hidden absolute left-0 mt-2 bg-white text-black rounded shadow-lg w-56">
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Общие сведения</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Специальности</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Доп. образование</a>
+                    <a href="#" class="block px-4 py-2 hover:bg-gray-100">Расписание звонков</a>
+                </div>
+            </div>
+
+            <a href="#" class="hover:text-[#ffc51c]">Новости</a>
+            <a href="#" class="hover:text-[#ffc51c]">Контакты</a>
+            <a href="#" class="hover:text-[#ffc51c]">СИБУПК</a>
+            <a href="#" class="hover:text-[#ffc51c]">Курсы</a>
+        </nav>
+
+        <!-- Burger -->
+        <button id="burger" class="md:hidden text-white text-3xl">☰</button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="hidden bg-[#1f9d00] md:hidden">
+        <a class="block px-6 py-3 border-b border-green-800" href="#">О ТЭЮТ</a>
+        <a class="block px-6 py-3 border-b border-green-800" href="#">Образование</a>
+        <a class="block px-6 py-3 border-b border-green-800" href="#">Новости</a>
+        <a class="block px-6 py-3 border-b border-green-800" href="#">Контакты</a>
+    </div>
 </header>
 
-<!-- Hero -->
-<section class="bg-blue-600 text-white py-20 text-center">
-  <h2 class="text-4xl font-bold mb-4">Томский экономико-Юридический техникум</h2>
-  <p class="text-xl mb-6">Современное образование для будущих профессионалов</p>
-  <a href="admission.html" class="bg-white text-blue-600 px-6 py-3 rounded-xl font-semibold text-lg">Подать заявку</a>
+
+<!-- HERO / BANNER -->
+<section class="pt-28 bg-white">
+    <div class="max-w-7xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-10 items-center">
+        
+        <div>
+            <h1 class="text-4xl md:text-5xl font-bold text-[#1f9d00] leading-tight">
+                Томский экономико-юридический техникум
+            </h1>
+            <p class="text-lg text-gray-700 mt-4">
+                Качественное образование, востребованные специальности, современные подходы к обучению.
+            </p>
+            <a href="#"
+               class="inline-block mt-6 bg-[#ffc51c] text-black px-6 py-3 rounded font-semibold hover:bg-yellow-400 transition">
+               Поступить сейчас
+            </a>
+        </div>
+
+        <img src="https://via.placeholder.com/600x400?text=TEUT" class="rounded shadow-lg" alt="">
+    </div>
 </section>
 
-<!-- Specialties Preview -->
-<section class="max-w-7xl mx-auto py-16 px-4">
-  <h3 class="text-3xl font-bold mb-8 text-center">Специальности</h3>
-  <div class="grid md:grid-cols-3 gap-8">
-    <div class="bg-white shadow-md rounded-xl p-6">
-      <h4 class="text-xl font-bold mb-2">Юриспруденция</h4>
-      <p class="mb-4 text-gray-700">Подготовка специалистов в правовой сфере.</p>
-      <a href="specialties.html" class="text-blue-600 font-semibold">Подробнее →</a>
+
+<!-- SPECIALTIES -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[#1f9d00] mb-8">Популярные специальности</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-[#1f9d00]">Правоохранительная деятельность</h3>
+                <p class="text-gray-600 mt-2">Подготовка специалистов для работы в органах правопорядка.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-[#1f9d00]">Юриспруденция</h3>
+                <p class="text-gray-600 mt-2">Юрист в сфере социального обеспечения и судебного администрирования.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                <h3 class="text-xl font-bold text-[#1f9d00]">Экономика и бухгалтерский учёт</h3>
+                <p class="text-gray-600 mt-2">Готовим специалистов с высоким уровнем аналитических навыков.</p>
+            </div>
+        </div>
     </div>
-    <div class="bg-white shadow-md rounded-xl p-6">
-      <h4 class="text-xl font-bold mb-2">Экономика и бухгалтерский учет</h4>
-      <p class="mb-4 text-gray-700">Финансы, учёт, расчёты и управление.</p>
-      <a href="specialties.html" class="text-blue-600 font-semibold">Подробнее →</a>
-    </div>
-    <div class="bg-white shadow-md rounded-xl p-6">
-      <h4 class="text-xl font-bold mb-2">Информационные системы</h4>
-      <p class="mb-4 text-gray-700">Технологии, программирование, сети.</p>
-      <a href="specialties.html" class="text-blue-600 font-semibold">Подробнее →</a>
-    </div>
-  </div>
 </section>
 
-<!-- News Preview -->
-<section class="bg-gray-200 py-16">
-  <div class="max-w-7xl mx-auto px-4">
-    <h3 class="text-3xl font-bold mb-8 text-center">Новости</h3>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h4 class="text-xl font-bold mb-2">Открыт прием документов</h4>
-        <p class="mb-4 text-gray-700">Стартовала подача заявлений на новый учебный год.</p>
-        <a href="news.html" class="text-blue-600 font-semibold">Читать →</a>
-      </div>
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h4 class="text-xl font-bold mb-2">Наши студенты победили</h4>
-        <p class="mb-4 text-gray-700">Команда ТЭЮТ заняла 1 место в конкурсе.</p>
-        <a href="news.html" class="text-blue-600 font-semibold">Читать →</a>
-      </div>
-      <div class="bg-white shadow-md rounded-xl p-6">
-        <h4 class="text-xl font-bold mb-2">Обновлена материальная база</h4>
-        <p class="mb-4 text-gray-700">Закуплено новое оборудование для практик.</p>
-        <a href="news.html" class="text-blue-600 font-semibold">Читать →</a>
-      </div>
+
+<!-- NEWS -->
+<section class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-[#1f9d00] mb-8">Последние новости</h2>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+            <div class="bg-gray-50 rounded shadow hover:shadow-lg transition">
+                <img src="https://via.placeholder.com/400x250" class="rounded-t" />
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">День открытых дверей</h3>
+                    <p class="text-gray-600">Приглашаем будущих абитуриентов познакомиться с техникумом.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded shadow hover:shadow-lg transition">
+                <img src="https://via.placeholder.com/400x250" class="rounded-t" />
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">Набор на курсы</h3>
+                    <p class="text-gray-600">Открыт прием на программы дополнительного образования.</p>
+                </div>
+            </div>
+
+            <div class="bg-gray-50 rounded shadow hover:shadow-lg transition">
+                <img src="https://via.placeholder.com/400x250" class="rounded-t" />
+                <div class="p-4">
+                    <h3 class="font-bold text-lg mb-2">Спортивные достижения</h3>
+                    <p class="text-gray-600">Команда ТЭЮТ заняла 1 место в региональных соревнованиях.</p>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-gray-900 text-white py-8 mt-10">
-  <div class="max-w-7xl mx-auto text-center">
-    <p class="text-lg">© 2025 Томский экономико-Юридический техникум (ТЭЮТ)</p>
-    <p class="text-gray-400">Все права защищены</p>
-  </div>
+
+<!-- FOOTER -->
+<footer class="bg-[#1f9d00] text-white py-6 mt-10">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+        © 2025 Томский экономико-юридический техникум. Все права защищены.
+    </div>
 </footer>
+
+<script>
+    document.getElementById('burger').addEventListener('click', () => {
+        document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+</script>
 
 </body>
 </html>
